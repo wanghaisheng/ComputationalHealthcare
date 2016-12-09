@@ -7,11 +7,13 @@ this [presentation](https://docs.google.com/presentation/d/1Oh_-FShr3BCGiCSqghI2
  
 ### Articles
 
-1. [Analyzing long term outcomes of Ventriculostomy in pediatric patients](blog/ventriculostomy.ipynb)
+1. [Introduction to Computational Healthcare](blog/introduction.ipynb)
+ 
+2. [Analyzing long term outcomes of Ventriculostomy in pediatric patients](blog/ventriculostomy.ipynb)
 
-3. [Exploring OHDSI common data model, comparison with Computational Healthcare data model (currently writing)](blog/ohdsi.ipynb)
+3. [Exploring OHDSI common data model, comparison with Computational Healthcare (currently writing)](blog/ohdsi.ipynb)
 
-3. [Reproducible embedding models for Procedure & Diagnosis codes using publicly available dataset (coming soon...)](blog/vectors.ipynb)
+4. [Embedding models for Procedure & Diagnosis codes using publicly available dataset (coming soon...)](blog/vectors.ipynb)
 
 
 ### Contact
