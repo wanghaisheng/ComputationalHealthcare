@@ -1,8 +1,10 @@
-# ComputationalHealthcare
+# Computational Healthcare Library & Blog
 
-Please visit [Computational Healthcare website](http://www.computationalhealthcare.com/) for more information.
-A quick overview of Computational Healthcare data model, architecture, types on analysis possible is available in 
-this [presentation](https://docs.google.com/presentation/d/1Oh_-FShr3BCGiCSqghI2dQYnyKvVOeiOqkIjaaEOPwc/edit?usp=sharing).
+This repository contains Computational Healthcare library (chlib) which can be used for loading healthcare datasets,
+performing aggregations and build machine learning models. Please visit 
+[Computational Healthcare website](http://www.computationalhealthcare.com/) for more information.
+A quick overview of data model, architecture, types on analysis possible is available in this 
+[presentation](https://docs.google.com/presentation/d/1Oh_-FShr3BCGiCSqghI2dQYnyKvVOeiOqkIjaaEOPwc/edit?usp=sharing). 
 
  
 ### Articles
@@ -20,4 +22,5 @@ this [presentation](https://docs.google.com/presentation/d/1Oh_-FShr3BCGiCSqghI2
 For more information, comments or if you plan on citing any posts please contact Akshay Bhat at aub3@cornell.edu. 
 
 ### Copyright
-Copyright Cornell University 2016; All rights reserved; 
+Copyright Cornell University 2016; All rights reserved;
+Please contact us for more information.

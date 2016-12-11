@@ -57,6 +57,9 @@ RUN pip install --upgrade pip \
                           protobuf \
                           humanize
 USER root
+COPY CH.zip /root/data/CH.zip
+RUN unzip /root/data/CH.zip -d /root/data/
+ARG CACHE_DATE=not_a_date
 RUN  git clone https://github.com/akshayubhat/ComputationalHealthcare /root/ComputationalHealthcare
 WORKDIR "/root/ComputationalHealthcare"
 RUN fab compile_protocols
