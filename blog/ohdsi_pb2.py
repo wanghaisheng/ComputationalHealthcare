@@ -19,7 +19,7 @@ _sym_db = _symbol_database.Default()
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='ohdsi.proto',
   package='cdmv5',
-  serialized_pb=_b('\n\x0bohdsi.proto\x12\x05\x63\x64mv5\"\xc6\x02\n\tCondition\x12\x1f\n\x17\x43ONDITION_OCCURRENCE_ID\x18\x01 \x01(\x05\x12\x11\n\tPERSON_ID\x18\x02 \x01(\x05\x12\x1c\n\x14\x43ONDITION_CONCEPT_ID\x18\x03 \x01(\x05\x12\x1c\n\x14\x43ONDITION_START_DATE\x18\x04 \x01(\x05\x12\x1a\n\x12\x43ONDITION_END_DATE\x18\x05 \x01(\x05\x12!\n\x19\x43ONDITION_TYPE_CONCEPT_ID\x18\x06 \x01(\x05\x12\x13\n\x0bSTOP_REASON\x18\x07 \x01(\x05\x12\x13\n\x0bPROVIDER_ID\x18\x08 \x01(\x05\x12\x1b\n\x13VISIT_OCCURRENCE_ID\x18\t \x01(\x05\x12\x1e\n\x16\x43ONDITION_SOURCE_VALUE\x18\n \x01(\x05\x12#\n\x1b\x43ONDITION_SOURCE_CONCEPT_ID\x18\x0b \x01(\x05\"\xa0\x04\n\x0c\x44rugExposure\x12\x18\n\x10\x44RUG_EXPOSURE_ID\x18\x01 \x01(\x05\x12\x11\n\tPERSON_ID\x18\x02 \x01(\x05\x12\x17\n\x0f\x44RUG_CONCEPT_ID\x18\x03 \x01(\x05\x12 \n\x18\x44RUG_EXPOSURE_START_DATE\x18\x04 \x01(\x05\x12\x1e\n\x16\x44RUG_EXPOSURE_END_DATE\x18\x05 \x01(\x05\x12\x1c\n\x14\x44RUG_TYPE_CONCEPT_ID\x18\x06 \x01(\x05\x12\x13\n\x0bSTOP_REASON\x18\x07 \x01(\x05\x12\x0f\n\x07REFILLS\x18\x08 \x01(\x05\x12\x10\n\x08QUANTITY\x18\t \x01(\x05\x12\x13\n\x0b\x44\x41YS_SUPPLY\x18\n \x01(\x05\x12\x0b\n\x03SIG\x18\x0b \x01(\x05\x12\x18\n\x10ROUTE_CONCEPT_ID\x18\x0c \x01(\x05\x12\x1b\n\x13\x45\x46\x46\x45\x43TIVE_DRUG_DOSE\x18\r \x01(\x05\x12\x1c\n\x14\x44OSE_UNIT_CONCEPT_ID\x18\x0e \x01(\x05\x12\x12\n\nLOT_NUMBER\x18\x0f \x01(\x05\x12\x13\n\x0bPROVIDER_ID\x18\x10 \x01(\x05\x12\x1b\n\x13VISIT_OCCURRENCE_ID\x18\x11 \x01(\x05\x12\x19\n\x11\x44RUG_SOURCE_VALUE\x18\x12 \x01(\x05\x12\x1e\n\x16\x44RUG_SOURCE_CONCEPT_ID\x18\x13 \x01(\x05\x12\x1a\n\x12ROUTE_SOURCE_VALUE\x18\x14 \x01(\x05\x12\x1e\n\x16\x44OSE_UNIT_SOURCE_VALUE\x18\x15 \x01(\x05\"\xde\x02\n\tProcedure\x12\x1f\n\x17PROCEDURE_OCCURRENCE_ID\x18\x01 \x01(\x05\x12\x11\n\tPERSON_ID\x18\x02 \x01(\x05\x12\x1c\n\x14PROCEDURE_CONCEPT_ID\x18\x03 \x01(\x05\x12\x16\n\x0ePROCEDURE_DATE\x18\x04 \x01(\x05\x12!\n\x19PROCEDURE_TYPE_CONCEPT_ID\x18\x05 \x01(\x05\x12\x1b\n\x13MODIFIER_CONCEPT_ID\x18\x06 \x01(\x05\x12\x10\n\x08QUANTITY\x18\x07 \x01(\x02\x12\x13\n\x0bPROVIDER_ID\x18\x08 \x01(\x05\x12\x1b\n\x13VISIT_OCCURRENCE_ID\x18\t \x01(\x05\x12\x1e\n\x16PROCEDURE_SOURCE_VALUE\x18\n \x01(\x05\x12#\n\x1bPROCEDURE_SOURCE_CONCEPT_ID\x18\x0b \x01(\x05\x12\x1e\n\x16QUALIFIER_SOURCE_VALUE\x18\x0c \x01(\x05\"\xac\x03\n\x05Visit\x12\x1b\n\x13VISIT_OCCURRENCE_ID\x18\x01 \x01(\x05\x12\x11\n\tPERSON_ID\x18\x02 \x01(\x05\x12\x18\n\x10VISIT_CONCEPT_ID\x18\x03 \x01(\x05\x12\x18\n\x10VISIT_START_DATE\x18\x04 \x01(\x05\x12\x18\n\x10VISIT_START_TIME\x18\x05 \x01(\x05\x12\x16\n\x0eVISIT_END_DATE\x18\x06 \x01(\x05\x12\x16\n\x0eVISIT_END_TIME\x18\x07 \x01(\x05\x12\x1d\n\x15VISIT_TYPE_CONCEPT_ID\x18\x08 \x01(\x05\x12\x13\n\x0bPROVIDER_ID\x18\t \x01(\x05\x12\x14\n\x0c\x43\x41RE_SITE_ID\x18\n \x01(\x05\x12\x1a\n\x12VISIT_SOURCE_VALUE\x18\x0b \x01(\x05\x12\x1f\n\x17VISIT_SOURCE_CONCEPT_ID\x18\x0c \x01(\x05\x12\"\n\x05\x64rugs\x18\r \x03(\x0b\x32\x13.cdmv5.DrugExposure\x12$\n\nconditions\x18\x0e \x03(\x0b\x32\x10.cdmv5.Condition\x12$\n\nprocedures\x18\x0f \x03(\x0b\x32\x10.cdmv5.Procedure\"\xb7\x04\n\x06Person\x12\x11\n\tPERSON_ID\x18\x01 \x01(\t\x12\x15\n\rYEAR_OF_BIRTH\x18\x02 \x01(\x05\x12\x16\n\x0eMONTH_OF_BIRTH\x18\x03 \x01(\x05\x12\x14\n\x0c\x44\x41Y_OF_BIRTH\x18\x04 \x01(\x05\x12\x15\n\rTIME_OF_BIRTH\x18\x05 \x01(\x05\x12\x34\n\x0fRACE_CONCEPT_ID\x18\x06 \x01(\x0e\x32\x12.cdmv5.GENDER_ENUM:\x07UNKNOWN\x12\x19\n\x11GENDER_CONCEPT_ID\x18\x07 \x01(\x05\x12\x33\n\x14\x45THNICITY_CONCEPT_ID\x18\x08 \x01(\x0e\x32\x15.cdmv5.ETHNICITY_ENUM\x12\x13\n\x0bLOCATION_ID\x18\t \x01(\x05\x12\x13\n\x0bPROVIDER_ID\x18\n \x01(\x05\x12\x14\n\x0c\x43\x41RE_SITE_ID\x18\x0b \x01(\x05\x12\x1b\n\x13GENDER_SOURCE_VALUE\x18\x0c \x01(\x05\x12 \n\x18GENDER_SOURCE_CONCEPT_ID\x18\r \x01(\x05\x12\x19\n\x11RACE_SOURCE_VALUE\x18\x0e \x01(\x05\x12\x1e\n\x16RACE_SOURCE_CONCEPT_ID\x18\x0f \x01(\x05\x12#\n\x1b\x45THNICITY_SOURCE_CONCEPT_ID\x18\x10 \x01(\x05\x12\x1e\n\x16\x45THNICITY_SOURCE_VALUE\x18\x11 \x01(\x05\x12\x1b\n\x13PERSON_SOURCE_VALUE\x18\x12 \x01(\x05\x12\x1c\n\x06VISITS\x18\x13 \x03(\x0b\x32\x0c.cdmv5.Visit*J\n\x0e\x45THNICITY_ENUM\x12\x19\n\x12Hispanic_or_Latino\x10\xeb\xc6\x8f\x12\x12\x1d\n\x16Not_Hispanic_or_Latino\x10\xec\xc6\x8f\x12*2\n\x0bGENDER_ENUM\x12\x0b\n\x06\x46\x45MALE\x10\xd4\x42\x12\t\n\x04MALE\x10\xbb\x42\x12\x0b\n\x07UNKNOWN\x10\x00')
+  serialized_pb=_b('\n\x0bohdsi.proto\x12\x05\x63\x64mv5\"\xc6\x02\n\tCondition\x12\x1f\n\x17\x43ONDITION_OCCURRENCE_ID\x18\x01 \x01(\x05\x12\x11\n\tPERSON_ID\x18\x02 \x01(\x05\x12\x1c\n\x14\x43ONDITION_CONCEPT_ID\x18\x03 \x01(\x05\x12\x1c\n\x14\x43ONDITION_START_DATE\x18\x04 \x01(\x03\x12\x1a\n\x12\x43ONDITION_END_DATE\x18\x05 \x01(\x03\x12!\n\x19\x43ONDITION_TYPE_CONCEPT_ID\x18\x06 \x01(\x05\x12\x13\n\x0bSTOP_REASON\x18\x07 \x01(\t\x12\x13\n\x0bPROVIDER_ID\x18\x08 \x01(\x05\x12\x1b\n\x13VISIT_OCCURRENCE_ID\x18\t \x01(\x05\x12\x1e\n\x16\x43ONDITION_SOURCE_VALUE\x18\n \x01(\t\x12#\n\x1b\x43ONDITION_SOURCE_CONCEPT_ID\x18\x0b \x01(\x05\"\xa0\x04\n\x0c\x44rugExposure\x12\x18\n\x10\x44RUG_EXPOSURE_ID\x18\x01 \x01(\x05\x12\x11\n\tPERSON_ID\x18\x02 \x01(\x05\x12\x17\n\x0f\x44RUG_CONCEPT_ID\x18\x03 \x01(\x05\x12 \n\x18\x44RUG_EXPOSURE_START_DATE\x18\x04 \x01(\x03\x12\x1e\n\x16\x44RUG_EXPOSURE_END_DATE\x18\x05 \x01(\x03\x12\x1c\n\x14\x44RUG_TYPE_CONCEPT_ID\x18\x06 \x01(\x05\x12\x13\n\x0bSTOP_REASON\x18\x07 \x01(\x05\x12\x0f\n\x07REFILLS\x18\x08 \x01(\x05\x12\x10\n\x08QUANTITY\x18\t \x01(\x05\x12\x13\n\x0b\x44\x41YS_SUPPLY\x18\n \x01(\x05\x12\x0b\n\x03SIG\x18\x0b \x01(\x05\x12\x18\n\x10ROUTE_CONCEPT_ID\x18\x0c \x01(\x05\x12\x1b\n\x13\x45\x46\x46\x45\x43TIVE_DRUG_DOSE\x18\r \x01(\x05\x12\x1c\n\x14\x44OSE_UNIT_CONCEPT_ID\x18\x0e \x01(\x05\x12\x12\n\nLOT_NUMBER\x18\x0f \x01(\x05\x12\x13\n\x0bPROVIDER_ID\x18\x10 \x01(\x05\x12\x1b\n\x13VISIT_OCCURRENCE_ID\x18\x11 \x01(\x05\x12\x19\n\x11\x44RUG_SOURCE_VALUE\x18\x12 \x01(\t\x12\x1e\n\x16\x44RUG_SOURCE_CONCEPT_ID\x18\x13 \x01(\x05\x12\x1a\n\x12ROUTE_SOURCE_VALUE\x18\x14 \x01(\t\x12\x1e\n\x16\x44OSE_UNIT_SOURCE_VALUE\x18\x15 \x01(\t\"\xde\x02\n\tProcedure\x12\x1f\n\x17PROCEDURE_OCCURRENCE_ID\x18\x01 \x01(\x05\x12\x11\n\tPERSON_ID\x18\x02 \x01(\x05\x12\x1c\n\x14PROCEDURE_CONCEPT_ID\x18\x03 \x01(\x05\x12\x16\n\x0ePROCEDURE_DATE\x18\x04 \x01(\x03\x12!\n\x19PROCEDURE_TYPE_CONCEPT_ID\x18\x05 \x01(\x05\x12\x1b\n\x13MODIFIER_CONCEPT_ID\x18\x06 \x01(\x05\x12\x10\n\x08QUANTITY\x18\x07 \x01(\x02\x12\x13\n\x0bPROVIDER_ID\x18\x08 \x01(\x05\x12\x1b\n\x13VISIT_OCCURRENCE_ID\x18\t \x01(\x05\x12\x1e\n\x16PROCEDURE_SOURCE_VALUE\x18\n \x01(\t\x12#\n\x1bPROCEDURE_SOURCE_CONCEPT_ID\x18\x0b \x01(\x05\x12\x1e\n\x16QUALIFIER_SOURCE_VALUE\x18\x0c \x01(\t\"\xd4\x02\n\x05Visit\x12\x1b\n\x13VISIT_OCCURRENCE_ID\x18\x01 \x02(\x05\x12\x11\n\tPERSON_ID\x18\x02 \x02(\x05\x12\x30\n\x10VISIT_CONCEPT_ID\x18\x03 \x01(\x0e\x32\x16.cdmv5.VISIT_TYPE_ENUM\x12\x18\n\x10VISIT_START_DATE\x18\x04 \x01(\x03\x12\x18\n\x10VISIT_START_TIME\x18\x05 \x01(\x05\x12\x16\n\x0eVISIT_END_DATE\x18\x06 \x01(\x03\x12\x16\n\x0eVISIT_END_TIME\x18\x07 \x01(\x05\x12\x1d\n\x15VISIT_TYPE_CONCEPT_ID\x18\x08 \x01(\x05\x12\x13\n\x0bPROVIDER_ID\x18\t \x01(\x05\x12\x14\n\x0c\x43\x41RE_SITE_ID\x18\n \x01(\x05\x12\x1a\n\x12VISIT_SOURCE_VALUE\x18\x0b \x01(\t\x12\x1f\n\x17VISIT_SOURCE_CONCEPT_ID\x18\x0c \x01(\x05\"\xa7\x05\n\x06Person\x12\x11\n\tPERSON_ID\x18\x01 \x02(\t\x12\x15\n\rYEAR_OF_BIRTH\x18\x02 \x02(\x05\x12\x16\n\x0eMONTH_OF_BIRTH\x18\x03 \x02(\x05\x12\x14\n\x0c\x44\x41Y_OF_BIRTH\x18\x04 \x02(\x05\x12\x15\n\rTIME_OF_BIRTH\x18\x05 \x01(\x05\x12\x17\n\x0fRACE_CONCEPT_ID\x18\x06 \x01(\x05\x12\x36\n\x11GENDER_CONCEPT_ID\x18\x07 \x02(\x0e\x32\x12.cdmv5.GENDER_ENUM:\x07UNKNOWN\x12\x33\n\x14\x45THNICITY_CONCEPT_ID\x18\x08 \x01(\x0e\x32\x15.cdmv5.ETHNICITY_ENUM\x12\x13\n\x0bLOCATION_ID\x18\t \x01(\x05\x12\x13\n\x0bPROVIDER_ID\x18\n \x01(\x05\x12\x14\n\x0c\x43\x41RE_SITE_ID\x18\x0b \x01(\x05\x12\x1b\n\x13GENDER_SOURCE_VALUE\x18\x0c \x01(\t\x12 \n\x18GENDER_SOURCE_CONCEPT_ID\x18\r \x01(\x05\x12\x19\n\x11RACE_SOURCE_VALUE\x18\x0e \x01(\t\x12\x1e\n\x16RACE_SOURCE_CONCEPT_ID\x18\x0f \x01(\x05\x12#\n\x1b\x45THNICITY_SOURCE_CONCEPT_ID\x18\x10 \x01(\x05\x12\x1e\n\x16\x45THNICITY_SOURCE_VALUE\x18\x11 \x01(\t\x12\x1b\n\x13PERSON_SOURCE_VALUE\x18\x12 \x01(\t\x12\x1c\n\x06visits\x18\x13 \x03(\x0b\x32\x0c.cdmv5.Visit\x12\"\n\x05\x64rugs\x18\x14 \x03(\x0b\x32\x13.cdmv5.DrugExposure\x12$\n\nconditions\x18\x15 \x03(\x0b\x32\x10.cdmv5.Condition\x12$\n\nprocedures\x18\x16 \x03(\x0b\x32\x10.cdmv5.Procedure*J\n\x0e\x45THNICITY_ENUM\x12\x19\n\x12HISPANIC_OR_LATINO\x10\xeb\xc6\x8f\x12\x12\x1d\n\x16NOT_HISPANIC_OR_LATINO\x10\xec\xc6\x8f\x12*2\n\x0bGENDER_ENUM\x12\x0b\n\x06\x46\x45MALE\x10\xd4\x42\x12\t\n\x04MALE\x10\xbb\x42\x12\x0b\n\x07UNKNOWN\x10\x00*^\n\x0fVISIT_TYPE_ENUM\x12\x15\n\x0eLONG_TERM_CARE\x10\xf0\xa5\xba\x14\x12\x13\n\x0e\x45MERGENCY_ROOM\x10\xf3G\x12\x0f\n\nOUTPATIENT\x10\xf2G\x12\x0e\n\tINPATIENT\x10\xf1G')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -30,18 +30,18 @@ _ETHNICITY_ENUM = _descriptor.EnumDescriptor(
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='Hispanic_or_Latino', index=0, number=38003563,
+      name='HISPANIC_OR_LATINO', index=0, number=38003563,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='Not_Hispanic_or_Latino', index=1, number=38003564,
+      name='NOT_HISPANIC_OR_LATINO', index=1, number=38003564,
       options=None,
       type=None),
   ],
   containing_type=None,
   options=None,
-  serialized_start=2252,
-  serialized_end=2326,
+  serialized_start=2276,
+  serialized_end=2350,
 )
 _sym_db.RegisterEnumDescriptor(_ETHNICITY_ENUM)
 
@@ -67,17 +67,52 @@ _GENDER_ENUM = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=2328,
-  serialized_end=2378,
+  serialized_start=2352,
+  serialized_end=2402,
 )
 _sym_db.RegisterEnumDescriptor(_GENDER_ENUM)
 
 GENDER_ENUM = enum_type_wrapper.EnumTypeWrapper(_GENDER_ENUM)
-Hispanic_or_Latino = 38003563
-Not_Hispanic_or_Latino = 38003564
+_VISIT_TYPE_ENUM = _descriptor.EnumDescriptor(
+  name='VISIT_TYPE_ENUM',
+  full_name='cdmv5.VISIT_TYPE_ENUM',
+  filename=None,
+  file=DESCRIPTOR,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='LONG_TERM_CARE', index=0, number=42898160,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='EMERGENCY_ROOM', index=1, number=9203,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='OUTPATIENT', index=2, number=9202,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='INPATIENT', index=3, number=9201,
+      options=None,
+      type=None),
+  ],
+  containing_type=None,
+  options=None,
+  serialized_start=2404,
+  serialized_end=2498,
+)
+_sym_db.RegisterEnumDescriptor(_VISIT_TYPE_ENUM)
+
+VISIT_TYPE_ENUM = enum_type_wrapper.EnumTypeWrapper(_VISIT_TYPE_ENUM)
+HISPANIC_OR_LATINO = 38003563
+NOT_HISPANIC_OR_LATINO = 38003564
 FEMALE = 8532
 MALE = 8507
 UNKNOWN = 0
+LONG_TERM_CARE = 42898160
+EMERGENCY_ROOM = 9203
+OUTPATIENT = 9202
+INPATIENT = 9201
 
 
 
@@ -111,14 +146,14 @@ _CONDITION = _descriptor.Descriptor(
       options=None),
     _descriptor.FieldDescriptor(
       name='CONDITION_START_DATE', full_name='cdmv5.Condition.CONDITION_START_DATE', index=3,
-      number=4, type=5, cpp_type=1, label=1,
+      number=4, type=3, cpp_type=2, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
       name='CONDITION_END_DATE', full_name='cdmv5.Condition.CONDITION_END_DATE', index=4,
-      number=5, type=5, cpp_type=1, label=1,
+      number=5, type=3, cpp_type=2, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -132,8 +167,8 @@ _CONDITION = _descriptor.Descriptor(
       options=None),
     _descriptor.FieldDescriptor(
       name='STOP_REASON', full_name='cdmv5.Condition.STOP_REASON', index=6,
-      number=7, type=5, cpp_type=1, label=1,
-      has_default_value=False, default_value=0,
+      number=7, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -153,8 +188,8 @@ _CONDITION = _descriptor.Descriptor(
       options=None),
     _descriptor.FieldDescriptor(
       name='CONDITION_SOURCE_VALUE', full_name='cdmv5.Condition.CONDITION_SOURCE_VALUE', index=9,
-      number=10, type=5, cpp_type=1, label=1,
-      has_default_value=False, default_value=0,
+      number=10, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -211,14 +246,14 @@ _DRUGEXPOSURE = _descriptor.Descriptor(
       options=None),
     _descriptor.FieldDescriptor(
       name='DRUG_EXPOSURE_START_DATE', full_name='cdmv5.DrugExposure.DRUG_EXPOSURE_START_DATE', index=3,
-      number=4, type=5, cpp_type=1, label=1,
+      number=4, type=3, cpp_type=2, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
       name='DRUG_EXPOSURE_END_DATE', full_name='cdmv5.DrugExposure.DRUG_EXPOSURE_END_DATE', index=4,
-      number=5, type=5, cpp_type=1, label=1,
+      number=5, type=3, cpp_type=2, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -309,8 +344,8 @@ _DRUGEXPOSURE = _descriptor.Descriptor(
       options=None),
     _descriptor.FieldDescriptor(
       name='DRUG_SOURCE_VALUE', full_name='cdmv5.DrugExposure.DRUG_SOURCE_VALUE', index=17,
-      number=18, type=5, cpp_type=1, label=1,
-      has_default_value=False, default_value=0,
+      number=18, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -323,15 +358,15 @@ _DRUGEXPOSURE = _descriptor.Descriptor(
       options=None),
     _descriptor.FieldDescriptor(
       name='ROUTE_SOURCE_VALUE', full_name='cdmv5.DrugExposure.ROUTE_SOURCE_VALUE', index=19,
-      number=20, type=5, cpp_type=1, label=1,
-      has_default_value=False, default_value=0,
+      number=20, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
       name='DOSE_UNIT_SOURCE_VALUE', full_name='cdmv5.DrugExposure.DOSE_UNIT_SOURCE_VALUE', index=20,
-      number=21, type=5, cpp_type=1, label=1,
-      has_default_value=False, default_value=0,
+      number=21, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -381,7 +416,7 @@ _PROCEDURE = _descriptor.Descriptor(
       options=None),
     _descriptor.FieldDescriptor(
       name='PROCEDURE_DATE', full_name='cdmv5.Procedure.PROCEDURE_DATE', index=3,
-      number=4, type=5, cpp_type=1, label=1,
+      number=4, type=3, cpp_type=2, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -423,8 +458,8 @@ _PROCEDURE = _descriptor.Descriptor(
       options=None),
     _descriptor.FieldDescriptor(
       name='PROCEDURE_SOURCE_VALUE', full_name='cdmv5.Procedure.PROCEDURE_SOURCE_VALUE', index=9,
-      number=10, type=5, cpp_type=1, label=1,
-      has_default_value=False, default_value=0,
+      number=10, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -437,8 +472,8 @@ _PROCEDURE = _descriptor.Descriptor(
       options=None),
     _descriptor.FieldDescriptor(
       name='QUALIFIER_SOURCE_VALUE', full_name='cdmv5.Procedure.QUALIFIER_SOURCE_VALUE', index=11,
-      number=12, type=5, cpp_type=1, label=1,
-      has_default_value=False, default_value=0,
+      number=12, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -467,28 +502,28 @@ _VISIT = _descriptor.Descriptor(
   fields=[
     _descriptor.FieldDescriptor(
       name='VISIT_OCCURRENCE_ID', full_name='cdmv5.Visit.VISIT_OCCURRENCE_ID', index=0,
-      number=1, type=5, cpp_type=1, label=1,
+      number=1, type=5, cpp_type=1, label=2,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
       name='PERSON_ID', full_name='cdmv5.Visit.PERSON_ID', index=1,
-      number=2, type=5, cpp_type=1, label=1,
+      number=2, type=5, cpp_type=1, label=2,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
       name='VISIT_CONCEPT_ID', full_name='cdmv5.Visit.VISIT_CONCEPT_ID', index=2,
-      number=3, type=5, cpp_type=1, label=1,
-      has_default_value=False, default_value=0,
+      number=3, type=14, cpp_type=8, label=1,
+      has_default_value=False, default_value=42898160,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
       name='VISIT_START_DATE', full_name='cdmv5.Visit.VISIT_START_DATE', index=3,
-      number=4, type=5, cpp_type=1, label=1,
+      number=4, type=3, cpp_type=2, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -502,7 +537,7 @@ _VISIT = _descriptor.Descriptor(
       options=None),
     _descriptor.FieldDescriptor(
       name='VISIT_END_DATE', full_name='cdmv5.Visit.VISIT_END_DATE', index=5,
-      number=6, type=5, cpp_type=1, label=1,
+      number=6, type=3, cpp_type=2, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -537,8 +572,8 @@ _VISIT = _descriptor.Descriptor(
       options=None),
     _descriptor.FieldDescriptor(
       name='VISIT_SOURCE_VALUE', full_name='cdmv5.Visit.VISIT_SOURCE_VALUE', index=10,
-      number=11, type=5, cpp_type=1, label=1,
-      has_default_value=False, default_value=0,
+      number=11, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -546,27 +581,6 @@ _VISIT = _descriptor.Descriptor(
       name='VISIT_SOURCE_CONCEPT_ID', full_name='cdmv5.Visit.VISIT_SOURCE_CONCEPT_ID', index=11,
       number=12, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='drugs', full_name='cdmv5.Visit.drugs', index=12,
-      number=13, type=11, cpp_type=10, label=3,
-      has_default_value=False, default_value=[],
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='conditions', full_name='cdmv5.Visit.conditions', index=13,
-      number=14, type=11, cpp_type=10, label=3,
-      has_default_value=False, default_value=[],
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='procedures', full_name='cdmv5.Visit.procedures', index=14,
-      number=15, type=11, cpp_type=10, label=3,
-      has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -582,7 +596,7 @@ _VISIT = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=1252,
-  serialized_end=1680,
+  serialized_end=1592,
 )
 
 
@@ -595,28 +609,28 @@ _PERSON = _descriptor.Descriptor(
   fields=[
     _descriptor.FieldDescriptor(
       name='PERSON_ID', full_name='cdmv5.Person.PERSON_ID', index=0,
-      number=1, type=9, cpp_type=9, label=1,
+      number=1, type=9, cpp_type=9, label=2,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
       name='YEAR_OF_BIRTH', full_name='cdmv5.Person.YEAR_OF_BIRTH', index=1,
-      number=2, type=5, cpp_type=1, label=1,
+      number=2, type=5, cpp_type=1, label=2,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
       name='MONTH_OF_BIRTH', full_name='cdmv5.Person.MONTH_OF_BIRTH', index=2,
-      number=3, type=5, cpp_type=1, label=1,
+      number=3, type=5, cpp_type=1, label=2,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
       name='DAY_OF_BIRTH', full_name='cdmv5.Person.DAY_OF_BIRTH', index=3,
-      number=4, type=5, cpp_type=1, label=1,
+      number=4, type=5, cpp_type=1, label=2,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -630,15 +644,15 @@ _PERSON = _descriptor.Descriptor(
       options=None),
     _descriptor.FieldDescriptor(
       name='RACE_CONCEPT_ID', full_name='cdmv5.Person.RACE_CONCEPT_ID', index=5,
-      number=6, type=14, cpp_type=8, label=1,
-      has_default_value=True, default_value=0,
+      number=6, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
       name='GENDER_CONCEPT_ID', full_name='cdmv5.Person.GENDER_CONCEPT_ID', index=6,
-      number=7, type=5, cpp_type=1, label=1,
-      has_default_value=False, default_value=0,
+      number=7, type=14, cpp_type=8, label=2,
+      has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -672,8 +686,8 @@ _PERSON = _descriptor.Descriptor(
       options=None),
     _descriptor.FieldDescriptor(
       name='GENDER_SOURCE_VALUE', full_name='cdmv5.Person.GENDER_SOURCE_VALUE', index=11,
-      number=12, type=5, cpp_type=1, label=1,
-      has_default_value=False, default_value=0,
+      number=12, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -686,8 +700,8 @@ _PERSON = _descriptor.Descriptor(
       options=None),
     _descriptor.FieldDescriptor(
       name='RACE_SOURCE_VALUE', full_name='cdmv5.Person.RACE_SOURCE_VALUE', index=13,
-      number=14, type=5, cpp_type=1, label=1,
-      has_default_value=False, default_value=0,
+      number=14, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -707,21 +721,42 @@ _PERSON = _descriptor.Descriptor(
       options=None),
     _descriptor.FieldDescriptor(
       name='ETHNICITY_SOURCE_VALUE', full_name='cdmv5.Person.ETHNICITY_SOURCE_VALUE', index=16,
-      number=17, type=5, cpp_type=1, label=1,
-      has_default_value=False, default_value=0,
+      number=17, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
       name='PERSON_SOURCE_VALUE', full_name='cdmv5.Person.PERSON_SOURCE_VALUE', index=17,
-      number=18, type=5, cpp_type=1, label=1,
-      has_default_value=False, default_value=0,
+      number=18, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='VISITS', full_name='cdmv5.Person.VISITS', index=18,
+      name='visits', full_name='cdmv5.Person.visits', index=18,
       number=19, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='drugs', full_name='cdmv5.Person.drugs', index=19,
+      number=20, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='conditions', full_name='cdmv5.Person.conditions', index=20,
+      number=21, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='procedures', full_name='cdmv5.Person.procedures', index=21,
+      number=22, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -737,16 +772,17 @@ _PERSON = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1683,
-  serialized_end=2250,
+  serialized_start=1595,
+  serialized_end=2274,
 )
 
-_VISIT.fields_by_name['drugs'].message_type = _DRUGEXPOSURE
-_VISIT.fields_by_name['conditions'].message_type = _CONDITION
-_VISIT.fields_by_name['procedures'].message_type = _PROCEDURE
-_PERSON.fields_by_name['RACE_CONCEPT_ID'].enum_type = _GENDER_ENUM
+_VISIT.fields_by_name['VISIT_CONCEPT_ID'].enum_type = _VISIT_TYPE_ENUM
+_PERSON.fields_by_name['GENDER_CONCEPT_ID'].enum_type = _GENDER_ENUM
 _PERSON.fields_by_name['ETHNICITY_CONCEPT_ID'].enum_type = _ETHNICITY_ENUM
-_PERSON.fields_by_name['VISITS'].message_type = _VISIT
+_PERSON.fields_by_name['visits'].message_type = _VISIT
+_PERSON.fields_by_name['drugs'].message_type = _DRUGEXPOSURE
+_PERSON.fields_by_name['conditions'].message_type = _CONDITION
+_PERSON.fields_by_name['procedures'].message_type = _PROCEDURE
 DESCRIPTOR.message_types_by_name['Condition'] = _CONDITION
 DESCRIPTOR.message_types_by_name['DrugExposure'] = _DRUGEXPOSURE
 DESCRIPTOR.message_types_by_name['Procedure'] = _PROCEDURE
@@ -754,6 +790,7 @@ DESCRIPTOR.message_types_by_name['Visit'] = _VISIT
 DESCRIPTOR.message_types_by_name['Person'] = _PERSON
 DESCRIPTOR.enum_types_by_name['ETHNICITY_ENUM'] = _ETHNICITY_ENUM
 DESCRIPTOR.enum_types_by_name['GENDER_ENUM'] = _GENDER_ENUM
+DESCRIPTOR.enum_types_by_name['VISIT_TYPE_ENUM'] = _VISIT_TYPE_ENUM
 
 Condition = _reflection.GeneratedProtocolMessageType('Condition', (_message.Message,), dict(
   DESCRIPTOR = _CONDITION,
