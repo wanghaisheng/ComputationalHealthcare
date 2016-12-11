@@ -94,3 +94,13 @@ ENV/
 .ropeproject
 
 /blog/ohdsi_synthetic_data/*.csv.gz
+logs/cpp*
+/chlib/cppcode/.idea/
+/chlib/cppcode/Makefile
+/chlib/cppcode/CMakeFiles/
+/chlib/cppcode/cmake_install.cmake
+/chlib/cppcode/CMakeCache.txt
+.idea
+/chlib/cppcode/analysis.cbp
+/chlib/cppcode/cmake-build-debug/
+/chlib/cppcode/bin/Debug/cpp
