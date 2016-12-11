@@ -1,6 +1,6 @@
 # ComputationalHealthcare
 
-Please visits [Computational Healthcare website](http://www.computationalhealthcare.com/) for more information.
+Please visit [Computational Healthcare website](http://www.computationalhealthcare.com/) for more information.
 A quick overview of Computational Healthcare data model, architecture, types on analysis possible is available in 
 this [presentation](https://docs.google.com/presentation/d/1Oh_-FShr3BCGiCSqghI2dQYnyKvVOeiOqkIjaaEOPwc/edit?usp=sharing).
 
